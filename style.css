@@ -1,6 +1,3 @@
-/* =============================================
-   RESET e BASE
-   ============================================= */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -18,9 +15,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* =============================================
-   VARIÁVEIS DE TEMA (CSS Custom Properties)
-   ============================================= */
 body.light {
   --bg: #f4f6f9;
   --bg-alt: #ffffff;
@@ -60,9 +54,6 @@ body {
   color: var(--text);
 }
 
-/* =============================================
-   LAYOUT UTILITÁRIOS
-   ============================================= */
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -77,9 +68,6 @@ body {
   background-color: var(--bg-alt);
 }
 
-/* =============================================
-   HEADER / NAVEGAÇÃO FIXA
-   ============================================= */
 #header {
   position: fixed;
   top: 0;
@@ -95,7 +83,6 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* Espaço para o header fixo não cobrir o conteúdo */
 main {
   padding-top: 60px;
 }
@@ -144,7 +131,6 @@ main {
   background-color: rgba(255,255,255,0.12);
 }
 
-/* Botão hamburguer (só aparece em mobile) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -165,9 +151,6 @@ main {
   transition: all 0.3s;
 }
 
-/* =============================================
-   TÍTULOS DE SEÇÃO
-   ============================================= */
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -196,9 +179,6 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* =============================================
-   SEÇÃO SOBRE MIM
-   ============================================= */
 .about-grid {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -206,17 +186,13 @@ main {
   align-items: start;
 }
 
-.avatar {
+.avatar-photo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #6c63ff);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-weight: 700;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--accent);
   flex-shrink: 0;
 }
 
@@ -277,9 +253,6 @@ main {
   color: #fff;
 }
 
-/* =============================================
-   SEÇÃO FORMAÇÃO - TIMELINE
-   ============================================= */
 .timeline {
   position: relative;
   padding-left: 1.5rem;
@@ -375,9 +348,6 @@ main {
 .lang-name { font-weight: 600; }
 .lang-level { color: var(--text-muted); font-size: 0.85rem; }
 
-/* =============================================
-   SEÇÃO PORTFÓLIO
-   ============================================= */
 .exp-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -463,9 +433,6 @@ main {
 .project-icon { font-size: 2rem; }
 .project-sub { font-size: 0.78rem; color: var(--text-muted); font-weight: 400; }
 
-/* =============================================
-   SEÇÃO CONTATO - FORMULÁRIO
-   ============================================= */
 .contact-intro {
   color: var(--text-muted);
   margin-bottom: 2rem;
@@ -542,9 +509,6 @@ main {
   transform: scale(0.97);
 }
 
-/* =============================================
-   MODAL DE SUCESSO
-   ============================================= */
 .modal {
   display: none;
   position: fixed;
@@ -587,9 +551,6 @@ main {
   font-size: 0.95rem;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
 footer {
   background-color: var(--nav-bg);
   color: var(--nav-text);
@@ -599,11 +560,7 @@ footer {
   opacity: 0.85;
 }
 
-/* =============================================
-   RESPONSIVIDADE MOBILE
-   ============================================= */
 @media (max-width: 680px) {
-
   .hamburger { display: flex; }
 
   #nav-menu {
@@ -629,7 +586,7 @@ footer {
     text-align: center;
   }
 
-  .avatar { margin: 0 auto; }
+  .avatar-photo { margin: 0 auto; }
   .about-links { justify-content: center; }
   .chips { justify-content: center; }
   .section-title::after { left: 50%; transform: translateX(-50%); }

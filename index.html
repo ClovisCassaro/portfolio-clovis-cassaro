@@ -8,27 +8,20 @@
 </head>
 <body class="light">
 
-  <!-- =============================================
-       HEADER: menu de navegação fixo no topo
-       ============================================= -->
   <header id="header">
     <div class="nav-brand">
       <span class="brand-name">Clóvis Cassaro</span>
     </div>
 
-    <!-- Botão hamburguer para mobile -->
     <button class="hamburger" id="hamburger" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
 
-    <!-- Links de navegação por âncoras -->
     <nav id="nav-menu">
       <a href="#sobre" class="nav-link">Sobre mim</a>
       <a href="#formacao" class="nav-link">Formação</a>
       <a href="#portfolio" class="nav-link">Portfólio</a>
       <a href="#contato" class="nav-link">Contato</a>
-
-      <!-- Alternância de tema claro/escuro -->
       <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">
         <span id="theme-icon">🌙</span>
       </button>
@@ -37,16 +30,12 @@
 
   <main>
 
-    <!-- =============================================
-         SEÇÃO 1: Sobre mim
-         ============================================= -->
     <section id="sobre" class="section">
       <div class="container">
         <h2 class="section-title">Sobre mim</h2>
 
         <div class="about-grid">
-          <!-- Avatar com iniciais -->
-          <div class="avatar" aria-label="Avatar de Clóvis Cassaro">CC</div>
+          <img src="foto.jpg" alt="Clóvis Cassaro" class="avatar-photo" />
 
           <div class="about-text">
             <h3>Clóvis Cassaro</h3>
@@ -63,7 +52,6 @@
               artificial, geoprocessamento e novas arquiteturas de software.
             </p>
 
-            <!-- Chips de tecnologias -->
             <div class="chips">
               <span class="chip">C# / .NET</span>
               <span class="chip">React</span>
@@ -75,7 +63,6 @@
               <span class="chip">PySpark</span>
             </div>
 
-            <!-- Links de contato rápido -->
             <div class="about-links">
               <a href="mailto:clovis_c@hotmail.com" class="btn-outline">E-mail</a>
               <a href="https://www.linkedin.com/in/clovis-cassaro" target="_blank" rel="noopener" class="btn-outline">LinkedIn</a>
@@ -85,14 +72,10 @@
       </div>
     </section>
 
-    <!-- =============================================
-         SEÇÃO 2: Formação
-         ============================================= -->
     <section id="formacao" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Formação &amp; Certificações</h2>
 
-        <!-- Formação Acadêmica -->
         <h3 class="subsection-title">Formação Acadêmica</h3>
         <div class="timeline">
 
@@ -143,7 +126,6 @@
 
         </div>
 
-        <!-- Certificações -->
         <h3 class="subsection-title" style="margin-top: 3rem;">Certificações</h3>
         <div class="cert-grid">
           <div class="cert-card">React Fundamentals</div>
@@ -153,7 +135,6 @@
           <div class="cert-card">Scrapy: Powerful Web Scraping &amp; Crawling with Python</div>
         </div>
 
-        <!-- Idiomas -->
         <h3 class="subsection-title" style="margin-top: 3rem;">Idiomas</h3>
         <div class="lang-grid">
           <div class="lang-card">
@@ -171,14 +152,10 @@
       </div>
     </section>
 
-    <!-- =============================================
-         SEÇÃO 3: Portfólio / Experiência
-         ============================================= -->
     <section id="portfolio" class="section">
       <div class="container">
         <h2 class="section-title">Portfólio &amp; Experiência</h2>
 
-        <!-- Experiência profissional como cards -->
         <h3 class="subsection-title">Experiência Profissional</h3>
         <div class="exp-grid">
 
@@ -272,7 +249,6 @@
 
         </div>
 
-        <!-- Links para trabalhos / perfis públicos -->
         <h3 class="subsection-title" style="margin-top: 3rem;">Links &amp; Projetos</h3>
         <div class="links-grid">
           <a href="https://github.com/ClovisCassaro" target="_blank" rel="noopener" class="project-link-card">
@@ -290,32 +266,25 @@
       </div>
     </section>
 
-    <!-- =============================================
-         SEÇÃO 4: Contato
-         ============================================= -->
     <section id="contato" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Contato</h2>
         <p class="contact-intro">Tem um projeto interessante ou quer bater um papo sobre tecnologia? Me manda uma mensagem!</p>
 
-        <!-- Formulário com validação em JavaScript -->
         <form id="contact-form" novalidate>
 
-          <!-- Campo: nome -->
           <div class="form-group">
             <label for="nome">Nome *</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" autocomplete="name" />
             <span class="field-error" id="nome-error"></span>
           </div>
 
-          <!-- Campo: e-mail -->
           <div class="form-group">
             <label for="email">E-mail *</label>
             <input type="email" id="email" name="email" placeholder="usuario@dominio.com" autocomplete="email" />
             <span class="field-error" id="email-error"></span>
           </div>
 
-          <!-- Campo: mensagem -->
           <div class="form-group">
             <label for="mensagem">Mensagem *</label>
             <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..."></textarea>
@@ -325,7 +294,6 @@
           <button type="submit" class="btn-submit">Enviar mensagem</button>
         </form>
 
-        <!-- Modal de confirmação (oculto por padrão) -->
         <div id="success-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div class="modal-box">
             <span class="modal-check">&#10003;</span>
@@ -340,7 +308,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Clóvis Cassaro · Chapecó, SC</p>
   </footer>
