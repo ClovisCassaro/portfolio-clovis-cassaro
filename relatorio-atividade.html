@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atividade Prática – Clóvis Cassaro</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12pt;
+      color: #000;
+      background: #fff;
+    }
+
+    /* ── CAPA ── */
+    .cover {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 40mm 30mm 30mm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      page-break-after: always;
+    }
+
+    .cover-logo {
+      width: 120px;
+      margin-bottom: 8px;
+    }
+
+    .cover-institution {
+      text-align: center;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .cover-institution p {
+      font-size: 12pt;
+      text-transform: uppercase;
+    }
+
+    .cover-course {
+      color: #FFD600;
+      font-size: 12pt;
+      text-transform: uppercase;
+      background: transparent;
+    }
+
+    .cover-title {
+      margin-top: auto;
+      font-size: 14pt;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .cover-author {
+      margin-top: auto;
+      text-align: right;
+      width: 100%;
+      font-size: 12pt;
+    }
+
+    .cover-footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12pt;
+    }
+
+    /* ── CONTEÚDO ── */
+    .content {
+      width: 210mm;
+      padding: 25mm 30mm;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      page-break-inside: avoid;
+    }
+
+    h2 {
+      font-size: 13pt;
+      font-weight: bold;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 12pt;
+      font-weight: normal;
+      margin-bottom: 6px;
+    }
+
+    p, li {
+      font-size: 12pt;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    a {
+      color: #000;
+    }
+
+    .link-block {
+      margin-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .link-block p {
+      margin-bottom: 2px;
+    }
+
+    .obs {
+      margin-top: 4px;
+      font-weight: bold;
+    }
+
+    /* Estrutura de pastas */
+    .folder-tree {
+      font-family: "Courier New", monospace;
+      font-size: 11pt;
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 16px 20px;
+      margin: 16px auto;
+      display: inline-block;
+      min-width: 280px;
+    }
+
+    .folder-tree-wrap {
+      text-align: center;
+    }
+
+    /* Placeholder de print */
+    .print-placeholder {
+      border: 2px dashed #aaa;
+      background: #fafafa;
+      text-align: center;
+      padding: 60px 20px;
+      margin: 16px auto;
+      color: #888;
+      font-size: 11pt;
+      font-style: italic;
+      max-width: 480px;
+    }
+
+    /* Numeração de página */
+    .page-number {
+      text-align: right;
+      font-size: 10pt;
+      margin-top: 30px;
+      color: #555;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+
+    ol {
+      margin-left: 24px;
+    }
+
+    ol li {
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .cover, .content { margin: 0 auto; }
+      .print-placeholder { border: 2px dashed #999; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== CAPA ===================== -->
+  <div class="cover">
+
+    <!-- Logo UNINTER (substituir pela imagem oficial se necessário) -->
+    <div style="text-align:center; margin-bottom: 10px;">
+      <div style="border: 3px solid #002060; display: inline-block; padding: 10px 18px; background: #002060;">
+        <span style="color:#FFD600; font-size: 18pt; font-weight: bold; letter-spacing: 2px;">UNINTER</span>
+      </div>
+      <div style="background: #FFD600; height: 6px; width: 160px; margin: 0 auto;"></div>
+      <div style="font-size: 8pt; color: #002060; margin-top: 4px; letter-spacing: 1px;">
+        CENTRO UNIVERSITÁRIO INTERNACIONAL
+      </div>
+    </div>
+
+    <div class="cover-institution" style="margin-top: 40px;">
+      <p>CENTRO UNIVERSITÁRIO INTERNACIONAL UNINTER</p>
+      <p>ESCOLA SUPERIOR POLITÉCNICA</p>
+      <p class="cover-course" style="color:#333;">ENGENHARIA DE SOFTWARE</p>
+      <p class="cover-course" style="color:#333;">APLICAÇÕES WEB E MÓVEIS</p>
+    </div>
+
+    <div class="cover-title" style="margin-top: 80px;">
+      <p>ATIVIDADE PRÁTICA</p>
+    </div>
+
+    <div class="cover-author" style="margin-top: 80px;">
+      <p>Clóvis Alceu Cassaro, 4109519</p>
+    </div>
+
+    <div class="cover-footer" style="margin-top: 40px;">
+      <p>Chapecó – SC</p>
+      <p>2026</p>
+    </div>
+
+  </div>
+
+  <!-- ===================== CONTEÚDO ===================== -->
+  <div class="content">
+
+    <!-- SEÇÃO 1: LINKS -->
+    <div class="section">
+      <h2>1. Links Obrigatórios</h2>
+
+      <h3>1.1. Link do Site Publicado (Hospedagem):</h3>
+      <div class="link-block">
+        <p><a href="https://cloviscassaro.github.io/portfolio-clovis-cassaro/">https://cloviscassaro.github.io/portfolio-clovis-cassaro/</a></p>
+        <p class="obs">OBS: Este link abre o site diretamente no navegador.</p>
+      </div>
+
+      <h3>1.2. Link do Repositório GitHub:</h3>
+      <div class="link-block">
+        <p><a href="https://github.com/ClovisCassaro/portfolio-clovis-cassaro">https://github.com/ClovisCassaro/portfolio-clovis-cassaro</a></p>
+        <p class="obs">OBS: Este link dá acesso ao código-fonte no repositório público.</p>
+      </div>
+    </div>
+
+    <!-- SEÇÃO 2: ESTRUTURA DE PASTAS -->
+    <div class="section">
+      <h2>2. Estrutura de Pastas do Projeto</h2>
+      <p style="margin-bottom: 12px; text-align: justify;">
+        A seguir a organização dos arquivos do projeto conforme visualizado no Visual Studio Code:
+      </p>
+
+      <div class="folder-tree-wrap">
+        <div class="folder-tree">
+          📁 portfolio-clovis-cassaro/<br>
+          &nbsp;&nbsp;├── 📄 index.html<br>
+          &nbsp;&nbsp;├── 🎨 style.css<br>
+          &nbsp;&nbsp;├── ⚙️ script.js<br>
+          &nbsp;&nbsp;└── 🖼️ foto.jpg
+        </div>
+      </div>
+
+      <p style="margin-top: 14px; color: #555; font-size: 10pt; text-align: center; font-style: italic;">
+        ⚠️ Substituir pelo print do VS Code ou Windows Explorer antes de entregar.
+      </p>
+    </div>
+
+    <!-- SEÇÃO 3: PRINTS DAS PÁGINAS -->
+    <div class="section page-break">
+      <h2>3. Prints das Páginas/Seções do Site</h2>
+      <p style="margin-bottom: 16px; text-align: justify;">
+        <strong>IMPORTANTE:</strong> Em todos os prints, o endereço
+        <em>https://cloviscassaro.github.io/portfolio-clovis-cassaro/</em>
+        está visível na barra de navegação.
+      </p>
+
+      <h3>3.1. Página/Seção: Sobre Mim</h3>
+      <div class="print-placeholder">
+        [ Colar aqui o print da seção "Sobre Mim" com a URL visível na barra do navegador ]
+      </div>
+
+      <h3 style="margin-top: 20px;">3.2. Página/Seção: Formação</h3>
+      <div class="print-placeholder">
+        [ Colar aqui o print da seção "Formação" com a URL visível na barra do navegador ]
+      </div>
+
+      <h3 style="margin-top: 20px;">3.3. Página/Seção: Portfólio</h3>
+      <div class="print-placeholder">
+        [ Colar aqui o print da seção "Portfólio" com a URL visível na barra do navegador ]
+      </div>
+
+      <h3 style="margin-top: 20px;">3.4. Página/Seção: Contato</h3>
+      <div class="print-placeholder">
+        [ Colar aqui o print da seção "Contato" com formulário e URL visível na barra do navegador ]
+      </div>
+    </div>
+
+    <!-- SEÇÃO 5: OBSERVAÇÕES -->
+    <div class="section page-break">
+      <h2>5. Observações Importantes</h2>
+      <ol>
+        <li>Não há recuperação de trabalhos;</li>
+        <li>Se o link do site não abrir no navegador: decréscimo de 50% da nota;</li>
+        <li>Link errado: nota zero (sem possibilidade de correção);</li>
+        <li>Código idêntico ao de outro aluno: nota zero.</li>
+      </ol>
+    </div>
+
+    <!-- SEÇÃO 6: CRITÉRIOS -->
+    <div class="section">
+      <h2>6. Critérios de Avaliação</h2>
+      <ol>
+        <li>50% da nota: Site publicado e acessível na internet. Igual a 50 pontos.</li>
+        <li>10% da nota: Código-fonte no repositório Github público. Igual a 10 pontos;</li>
+        <li>40% da nota: Implementação das 4 seções (10% cada). Igual a 40 pontos;</li>
+      </ol>
+      <p style="margin-top: 12px; font-weight: bold;">Total: 100 pontos</p>
+    </div>
+
+    <div class="page-number">1</div>
+
+  </div>
+
+</body>
+</html>
